@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Air Bites - Recommend Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #FAACA8;
+            color: white;
+            padding: 0px;
+            text-align: center;
+            
+        }
+
+        @keyframes headerAnimation {
+            0% { transform: translateY(-10px); }
+            100% { transform: translateY(10px); }
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Embedding iframe */
+        .dashboard-container {
+            margin: 20px auto;
+            
+            background-color: #FAACA8;
+            background-opacity: 0.8;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            animation: fadeIn 2s ease-out;
+            
+                        
+            width: 80%;
+            height: 920px; /* Adjust height as needed */
+        }
+
+        iframe {
+            
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <main>
+          <style>
+             body {background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);  
+                   height: "100%"
+                   background-position: center;
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   image-rendering: -webkit-optimize-contrast;}
+        </style>
+
+       
+
+        <!-- Embed Tableau Dashboard -->
+        <div class="dashboard-container">
+        <header>
+               <h3> Open Air Bites Recommendations </h2>
+        </header>
+            <iframe src="https://public.tableau.com/views/ZomatoRecommendations/Dashboard1?:language=en-US&:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:showAppBanner=false&:display_count=y&:origin=viz_share_link" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    </body>
+</html>
